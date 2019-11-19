@@ -31,6 +31,7 @@ static MTHttpConfig *httpConfig = nil;
     self = [super init];
     if (self) {
         _baseUrl = @"";
+        _debugMode = YES;
         _securityPolicy = [AFSecurityPolicy defaultPolicy];
         _sessionConfiguration = [NSURLSessionConfiguration defaultSessionConfiguration];
     }

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,7 +11,6 @@
 		8C7E536387FF4A7CDDF0E7DD /* Pods_MTHttpManagerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDBC3A6F44A945828F8EE282 /* Pods_MTHttpManagerTests.framework */; };
 		B149D96125E8B26F2EE3FC35 /* Pods_MTHttpManagerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 397677281F987E2B3DDA3547 /* Pods_MTHttpManagerUITests.framework */; };
 		EAF35D4023841E34007B0396 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF35D3F23841E34007B0396 /* AppDelegate.m */; };
-		EAF35D4323841E34007B0396 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF35D4223841E34007B0396 /* SceneDelegate.m */; };
 		EAF35D4623841E34007B0396 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF35D4523841E34007B0396 /* ViewController.m */; };
 		EAF35D4923841E34007B0396 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAF35D4723841E34007B0396 /* Main.storyboard */; };
 		EAF35D4B23841E35007B0396 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAF35D4A23841E35007B0396 /* Assets.xcassets */; };
@@ -58,8 +57,6 @@
 		EAF35D3B23841E34007B0396 /* MTHttpManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTHttpManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAF35D3E23841E34007B0396 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EAF35D3F23841E34007B0396 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EAF35D4123841E34007B0396 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		EAF35D4223841E34007B0396 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		EAF35D4423841E34007B0396 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		EAF35D4523841E34007B0396 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EAF35D4823841E34007B0396 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -169,15 +166,9 @@
 				EAF35D7623841E8B007B0396 /* MTHttpManager */,
 				EAF35D3E23841E34007B0396 /* AppDelegate.h */,
 				EAF35D3F23841E34007B0396 /* AppDelegate.m */,
-				EAF35D4123841E34007B0396 /* SceneDelegate.h */,
-				EAF35D4223841E34007B0396 /* SceneDelegate.m */,
 				EAF35D4423841E34007B0396 /* ViewController.h */,
 				EAF35D4523841E34007B0396 /* ViewController.m */,
-				EAF35D4723841E34007B0396 /* Main.storyboard */,
-				EAF35D4A23841E35007B0396 /* Assets.xcassets */,
-				EAF35D4C23841E35007B0396 /* LaunchScreen.storyboard */,
-				EAF35D4F23841E35007B0396 /* Info.plist */,
-				EAF35D5023841E35007B0396 /* main.m */,
+				EAF35D90238429B0007B0396 /* Supporting Files */,
 			);
 			path = MTHttpManager;
 			sourceTree = "<group>";
@@ -275,6 +266,18 @@
 				EAF35D8D23842378007B0396 /* MTHttpLogger.m */,
 			);
 			path = Logger;
+			sourceTree = "<group>";
+		};
+		EAF35D90238429B0007B0396 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAF35D4723841E34007B0396 /* Main.storyboard */,
+				EAF35D4A23841E35007B0396 /* Assets.xcassets */,
+				EAF35D4C23841E35007B0396 /* LaunchScreen.storyboard */,
+				EAF35D4F23841E35007B0396 /* Info.plist */,
+				EAF35D5023841E35007B0396 /* main.m */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -506,7 +509,6 @@
 				EAF35D7923841ED8007B0396 /* MTHttpManager.m in Sources */,
 				EAF35D8E23842378007B0396 /* MTHttpLogger.m in Sources */,
 				EAF35D8623841FB0007B0396 /* MTHttpBaseResponse.m in Sources */,
-				EAF35D4323841E34007B0396 /* SceneDelegate.m in Sources */,
 				EAF35D7E23841F0A007B0396 /* MTHttpUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

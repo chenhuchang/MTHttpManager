@@ -10,20 +10,21 @@
 
 @class AFSecurityPolicy;
 
+NS_ASSUME_NONNULL_BEGIN
 
 @interface MTHttpConfig : NSObject
 
 
-- (instancetype _Nullable )init NS_UNAVAILABLE;
+- (instancetype )init NS_UNAVAILABLE;
 
-+ (instancetype _Nullable )new NS_UNAVAILABLE;
++ (instancetype )new NS_UNAVAILABLE;
 
-+ (MTHttpConfig *_Nullable)sharedConfig;
++ (MTHttpConfig *)sharedConfig;
 
 /*! Base url of requests, default is nil */
-@property (nonatomic, strong) NSString *_Nullable baseUrl;
+@property (nonatomic, strong) NSString *baseUrl;
 /*! Security policy will be used by AFNetworking. See also `AFSecurityPolicy`.*/
-@property (nonatomic, strong) AFSecurityPolicy * _Nullable securityPolicy;
+@property (nonatomic, strong) AFSecurityPolicy *securityPolicy;
 
 /*! Request timeout seconds, default is 30 (unit is second) */
 @property (nonatomic, assign) NSTimeInterval timeoutSeconds;
@@ -32,9 +33,10 @@
 @property (nonatomic, assign) BOOL debugMode;
 
 /*!  SessionConfiguration will be used to initialize AFHTTPSessionManager. Default is nil. */
-@property (nonatomic, strong) NSURLSessionConfiguration* _Nullable sessionConfiguration;
+@property (nonatomic, strong) NSURLSessionConfiguration *sessionConfiguration;
 
 
 
 @end
 
+NS_ASSUME_NONNULL_END
