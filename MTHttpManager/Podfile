@@ -1,0 +1,31 @@
+
+# Uncomment the next line to define a global platform for your project
+
+workspace 'MTHttpManager.xcworkspace'
+project 'MTHttpManager/MTHttpManager.xcodeproj'
+
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '8.0'
+
+target 'MTHttpManager' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  inhibit_all_warnings!
+  use_frameworks!
+
+    pod 'AFNetworking', '~> 3.2.1'
+    
+  # Pods for Platform
+
+  target 'MTHttpManagerTests' do
+    inherit! :search_paths
+    
+    # Pods for testing
+  end
+
+  target 'MTHttpManagerUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

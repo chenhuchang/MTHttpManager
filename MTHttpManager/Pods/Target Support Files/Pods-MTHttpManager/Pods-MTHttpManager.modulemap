@@ -1,0 +1,6 @@
+framework module Pods_MTHttpManager {
+  umbrella header "Pods-MTHttpManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

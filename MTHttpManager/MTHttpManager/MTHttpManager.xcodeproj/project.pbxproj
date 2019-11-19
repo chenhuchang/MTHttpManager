@@ -1,0 +1,833 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13E44894039CCF3A50028A99 /* Pods_MTHttpManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8883E4C91076BAAB6929AAEE /* Pods_MTHttpManager.framework */; };
+		8C7E536387FF4A7CDDF0E7DD /* Pods_MTHttpManagerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDBC3A6F44A945828F8EE282 /* Pods_MTHttpManagerTests.framework */; };
+		B149D96125E8B26F2EE3FC35 /* Pods_MTHttpManagerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 397677281F987E2B3DDA3547 /* Pods_MTHttpManagerUITests.framework */; };
+		EAF35D4023841E34007B0396 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF35D3F23841E34007B0396 /* AppDelegate.m */; };
+		EAF35D4323841E34007B0396 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF35D4223841E34007B0396 /* SceneDelegate.m */; };
+		EAF35D4623841E34007B0396 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF35D4523841E34007B0396 /* ViewController.m */; };
+		EAF35D4923841E34007B0396 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAF35D4723841E34007B0396 /* Main.storyboard */; };
+		EAF35D4B23841E35007B0396 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAF35D4A23841E35007B0396 /* Assets.xcassets */; };
+		EAF35D4E23841E35007B0396 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAF35D4C23841E35007B0396 /* LaunchScreen.storyboard */; };
+		EAF35D5123841E35007B0396 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF35D5023841E35007B0396 /* main.m */; };
+		EAF35D5B23841E36007B0396 /* MTHttpManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF35D5A23841E36007B0396 /* MTHttpManagerTests.m */; };
+		EAF35D6623841E36007B0396 /* MTHttpManagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF35D6523841E36007B0396 /* MTHttpManagerUITests.m */; };
+		EAF35D7523841E84007B0396 /* MTHttpConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF35D7423841E84007B0396 /* MTHttpConfig.m */; };
+		EAF35D7923841ED8007B0396 /* MTHttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF35D7823841ED8007B0396 /* MTHttpManager.m */; };
+		EAF35D7E23841F0A007B0396 /* MTHttpUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF35D7D23841F0A007B0396 /* MTHttpUtils.m */; };
+		EAF35D8223841F91007B0396 /* MTHttpBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF35D8123841F91007B0396 /* MTHttpBaseRequest.m */; };
+		EAF35D8623841FB0007B0396 /* MTHttpBaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF35D8523841FB0007B0396 /* MTHttpBaseResponse.m */; };
+		EAF35D8A23841FCD007B0396 /* MTHttpDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF35D8923841FCD007B0396 /* MTHttpDownload.m */; };
+		EAF35D8E23842378007B0396 /* MTHttpLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF35D8D23842378007B0396 /* MTHttpLogger.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EAF35D5723841E36007B0396 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAF35D3323841E34007B0396 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAF35D3A23841E34007B0396;
+			remoteInfo = MTHttpManager;
+		};
+		EAF35D6223841E36007B0396 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAF35D3323841E34007B0396 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAF35D3A23841E34007B0396;
+			remoteInfo = MTHttpManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		26D1A8E91194949791DDFD9C /* Pods-MTHttpManagerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTHttpManagerUITests.release.xcconfig"; path = "Target Support Files/Pods-MTHttpManagerUITests/Pods-MTHttpManagerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		397677281F987E2B3DDA3547 /* Pods_MTHttpManagerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MTHttpManagerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		572BAC64D4D2CEDECD407C97 /* Pods-MTHttpManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTHttpManagerTests.debug.xcconfig"; path = "Target Support Files/Pods-MTHttpManagerTests/Pods-MTHttpManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		57BEDFFB7AC7D15AAA90FECB /* Pods-MTHttpManagerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTHttpManagerUITests.debug.xcconfig"; path = "Target Support Files/Pods-MTHttpManagerUITests/Pods-MTHttpManagerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8883E4C91076BAAB6929AAEE /* Pods_MTHttpManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MTHttpManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F0879C31857F244E5F97CAE /* Pods-MTHttpManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTHttpManager.release.xcconfig"; path = "Target Support Files/Pods-MTHttpManager/Pods-MTHttpManager.release.xcconfig"; sourceTree = "<group>"; };
+		9706351BBD4387AB2E1103C4 /* Pods-MTHttpManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTHttpManager.debug.xcconfig"; path = "Target Support Files/Pods-MTHttpManager/Pods-MTHttpManager.debug.xcconfig"; sourceTree = "<group>"; };
+		B9BFC5AD670E7742C386E713 /* Pods-MTHttpManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTHttpManagerTests.release.xcconfig"; path = "Target Support Files/Pods-MTHttpManagerTests/Pods-MTHttpManagerTests.release.xcconfig"; sourceTree = "<group>"; };
+		CDBC3A6F44A945828F8EE282 /* Pods_MTHttpManagerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MTHttpManagerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAF35D3B23841E34007B0396 /* MTHttpManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTHttpManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAF35D3E23841E34007B0396 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EAF35D3F23841E34007B0396 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EAF35D4123841E34007B0396 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		EAF35D4223841E34007B0396 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		EAF35D4423841E34007B0396 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EAF35D4523841E34007B0396 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EAF35D4823841E34007B0396 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EAF35D4A23841E35007B0396 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EAF35D4D23841E35007B0396 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EAF35D4F23841E35007B0396 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAF35D5023841E35007B0396 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EAF35D5623841E36007B0396 /* MTHttpManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTHttpManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAF35D5A23841E36007B0396 /* MTHttpManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTHttpManagerTests.m; sourceTree = "<group>"; };
+		EAF35D5C23841E36007B0396 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAF35D6123841E36007B0396 /* MTHttpManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTHttpManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAF35D6523841E36007B0396 /* MTHttpManagerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTHttpManagerUITests.m; sourceTree = "<group>"; };
+		EAF35D6723841E36007B0396 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAF35D7323841E84007B0396 /* MTHttpConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTHttpConfig.h; sourceTree = "<group>"; };
+		EAF35D7423841E84007B0396 /* MTHttpConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTHttpConfig.m; sourceTree = "<group>"; };
+		EAF35D7723841ED8007B0396 /* MTHttpManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTHttpManager.h; sourceTree = "<group>"; };
+		EAF35D7823841ED8007B0396 /* MTHttpManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTHttpManager.m; sourceTree = "<group>"; };
+		EAF35D7C23841F0A007B0396 /* MTHttpUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTHttpUtils.h; sourceTree = "<group>"; };
+		EAF35D7D23841F0A007B0396 /* MTHttpUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTHttpUtils.m; sourceTree = "<group>"; };
+		EAF35D8023841F91007B0396 /* MTHttpBaseRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTHttpBaseRequest.h; sourceTree = "<group>"; };
+		EAF35D8123841F91007B0396 /* MTHttpBaseRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTHttpBaseRequest.m; sourceTree = "<group>"; };
+		EAF35D8423841FB0007B0396 /* MTHttpBaseResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTHttpBaseResponse.h; sourceTree = "<group>"; };
+		EAF35D8523841FB0007B0396 /* MTHttpBaseResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTHttpBaseResponse.m; sourceTree = "<group>"; };
+		EAF35D8823841FCD007B0396 /* MTHttpDownload.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTHttpDownload.h; sourceTree = "<group>"; };
+		EAF35D8923841FCD007B0396 /* MTHttpDownload.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTHttpDownload.m; sourceTree = "<group>"; };
+		EAF35D8C23842378007B0396 /* MTHttpLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTHttpLogger.h; sourceTree = "<group>"; };
+		EAF35D8D23842378007B0396 /* MTHttpLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTHttpLogger.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAF35D3823841E34007B0396 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13E44894039CCF3A50028A99 /* Pods_MTHttpManager.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAF35D5323841E36007B0396 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C7E536387FF4A7CDDF0E7DD /* Pods_MTHttpManagerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAF35D5E23841E36007B0396 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B149D96125E8B26F2EE3FC35 /* Pods_MTHttpManagerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B6EA4EEB061375F7F8BF81D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9706351BBD4387AB2E1103C4 /* Pods-MTHttpManager.debug.xcconfig */,
+				8F0879C31857F244E5F97CAE /* Pods-MTHttpManager.release.xcconfig */,
+				572BAC64D4D2CEDECD407C97 /* Pods-MTHttpManagerTests.debug.xcconfig */,
+				B9BFC5AD670E7742C386E713 /* Pods-MTHttpManagerTests.release.xcconfig */,
+				57BEDFFB7AC7D15AAA90FECB /* Pods-MTHttpManagerUITests.debug.xcconfig */,
+				26D1A8E91194949791DDFD9C /* Pods-MTHttpManagerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		936B8F84383DF92BB30226F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8883E4C91076BAAB6929AAEE /* Pods_MTHttpManager.framework */,
+				CDBC3A6F44A945828F8EE282 /* Pods_MTHttpManagerTests.framework */,
+				397677281F987E2B3DDA3547 /* Pods_MTHttpManagerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EAF35D3223841E34007B0396 = {
+			isa = PBXGroup;
+			children = (
+				EAF35D3D23841E34007B0396 /* MTHttpManager */,
+				EAF35D5923841E36007B0396 /* MTHttpManagerTests */,
+				EAF35D6423841E36007B0396 /* MTHttpManagerUITests */,
+				EAF35D3C23841E34007B0396 /* Products */,
+				2B6EA4EEB061375F7F8BF81D /* Pods */,
+				936B8F84383DF92BB30226F0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EAF35D3C23841E34007B0396 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAF35D3B23841E34007B0396 /* MTHttpManager.app */,
+				EAF35D5623841E36007B0396 /* MTHttpManagerTests.xctest */,
+				EAF35D6123841E36007B0396 /* MTHttpManagerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAF35D3D23841E34007B0396 /* MTHttpManager */ = {
+			isa = PBXGroup;
+			children = (
+				EAF35D7623841E8B007B0396 /* MTHttpManager */,
+				EAF35D3E23841E34007B0396 /* AppDelegate.h */,
+				EAF35D3F23841E34007B0396 /* AppDelegate.m */,
+				EAF35D4123841E34007B0396 /* SceneDelegate.h */,
+				EAF35D4223841E34007B0396 /* SceneDelegate.m */,
+				EAF35D4423841E34007B0396 /* ViewController.h */,
+				EAF35D4523841E34007B0396 /* ViewController.m */,
+				EAF35D4723841E34007B0396 /* Main.storyboard */,
+				EAF35D4A23841E35007B0396 /* Assets.xcassets */,
+				EAF35D4C23841E35007B0396 /* LaunchScreen.storyboard */,
+				EAF35D4F23841E35007B0396 /* Info.plist */,
+				EAF35D5023841E35007B0396 /* main.m */,
+			);
+			path = MTHttpManager;
+			sourceTree = "<group>";
+		};
+		EAF35D5923841E36007B0396 /* MTHttpManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				EAF35D5A23841E36007B0396 /* MTHttpManagerTests.m */,
+				EAF35D5C23841E36007B0396 /* Info.plist */,
+			);
+			path = MTHttpManagerTests;
+			sourceTree = "<group>";
+		};
+		EAF35D6423841E36007B0396 /* MTHttpManagerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EAF35D6523841E36007B0396 /* MTHttpManagerUITests.m */,
+				EAF35D6723841E36007B0396 /* Info.plist */,
+			);
+			path = MTHttpManagerUITests;
+			sourceTree = "<group>";
+		};
+		EAF35D7623841E8B007B0396 /* MTHttpManager */ = {
+			isa = PBXGroup;
+			children = (
+				EAF35D7A23841EDE007B0396 /* Config */,
+				EAF35D8B23841FD3007B0396 /* Download */,
+				EAF35D8F2384237E007B0396 /* Logger */,
+				EAF35D7B23841EE7007B0396 /* Manager */,
+				EAF35D8323841F97007B0396 /* Request */,
+				EAF35D8723841FB6007B0396 /* Response */,
+				EAF35D7F23841F12007B0396 /* Utils */,
+			);
+			path = MTHttpManager;
+			sourceTree = "<group>";
+		};
+		EAF35D7A23841EDE007B0396 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				EAF35D7323841E84007B0396 /* MTHttpConfig.h */,
+				EAF35D7423841E84007B0396 /* MTHttpConfig.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		EAF35D7B23841EE7007B0396 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				EAF35D7723841ED8007B0396 /* MTHttpManager.h */,
+				EAF35D7823841ED8007B0396 /* MTHttpManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		EAF35D7F23841F12007B0396 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EAF35D7C23841F0A007B0396 /* MTHttpUtils.h */,
+				EAF35D7D23841F0A007B0396 /* MTHttpUtils.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EAF35D8323841F97007B0396 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				EAF35D8023841F91007B0396 /* MTHttpBaseRequest.h */,
+				EAF35D8123841F91007B0396 /* MTHttpBaseRequest.m */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		EAF35D8723841FB6007B0396 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				EAF35D8423841FB0007B0396 /* MTHttpBaseResponse.h */,
+				EAF35D8523841FB0007B0396 /* MTHttpBaseResponse.m */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		EAF35D8B23841FD3007B0396 /* Download */ = {
+			isa = PBXGroup;
+			children = (
+				EAF35D8823841FCD007B0396 /* MTHttpDownload.h */,
+				EAF35D8923841FCD007B0396 /* MTHttpDownload.m */,
+			);
+			path = Download;
+			sourceTree = "<group>";
+		};
+		EAF35D8F2384237E007B0396 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				EAF35D8C23842378007B0396 /* MTHttpLogger.h */,
+				EAF35D8D23842378007B0396 /* MTHttpLogger.m */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAF35D3A23841E34007B0396 /* MTHttpManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAF35D6A23841E36007B0396 /* Build configuration list for PBXNativeTarget "MTHttpManager" */;
+			buildPhases = (
+				F1218B7337BF39A5D796A965 /* [CP] Check Pods Manifest.lock */,
+				EAF35D3723841E34007B0396 /* Sources */,
+				EAF35D3823841E34007B0396 /* Frameworks */,
+				EAF35D3923841E34007B0396 /* Resources */,
+				D1BC67813D7F6D09E6AED430 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MTHttpManager;
+			productName = MTHttpManager;
+			productReference = EAF35D3B23841E34007B0396 /* MTHttpManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EAF35D5523841E36007B0396 /* MTHttpManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAF35D6D23841E36007B0396 /* Build configuration list for PBXNativeTarget "MTHttpManagerTests" */;
+			buildPhases = (
+				BA8A7EDCD1A24FE6621FFBDF /* [CP] Check Pods Manifest.lock */,
+				EAF35D5223841E36007B0396 /* Sources */,
+				EAF35D5323841E36007B0396 /* Frameworks */,
+				EAF35D5423841E36007B0396 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAF35D5823841E36007B0396 /* PBXTargetDependency */,
+			);
+			name = MTHttpManagerTests;
+			productName = MTHttpManagerTests;
+			productReference = EAF35D5623841E36007B0396 /* MTHttpManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EAF35D6023841E36007B0396 /* MTHttpManagerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAF35D7023841E36007B0396 /* Build configuration list for PBXNativeTarget "MTHttpManagerUITests" */;
+			buildPhases = (
+				B49A7F663FB69A7061E4ECA4 /* [CP] Check Pods Manifest.lock */,
+				EAF35D5D23841E36007B0396 /* Sources */,
+				EAF35D5E23841E36007B0396 /* Frameworks */,
+				EAF35D5F23841E36007B0396 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAF35D6323841E36007B0396 /* PBXTargetDependency */,
+			);
+			name = MTHttpManagerUITests;
+			productName = MTHttpManagerUITests;
+			productReference = EAF35D6123841E36007B0396 /* MTHttpManagerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAF35D3323841E34007B0396 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = hupo;
+				TargetAttributes = {
+					EAF35D3A23841E34007B0396 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					EAF35D5523841E36007B0396 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = EAF35D3A23841E34007B0396;
+					};
+					EAF35D6023841E36007B0396 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = EAF35D3A23841E34007B0396;
+					};
+				};
+			};
+			buildConfigurationList = EAF35D3623841E34007B0396 /* Build configuration list for PBXProject "MTHttpManager" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EAF35D3223841E34007B0396;
+			productRefGroup = EAF35D3C23841E34007B0396 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAF35D3A23841E34007B0396 /* MTHttpManager */,
+				EAF35D5523841E36007B0396 /* MTHttpManagerTests */,
+				EAF35D6023841E36007B0396 /* MTHttpManagerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAF35D3923841E34007B0396 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAF35D4E23841E35007B0396 /* LaunchScreen.storyboard in Resources */,
+				EAF35D4B23841E35007B0396 /* Assets.xcassets in Resources */,
+				EAF35D4923841E34007B0396 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAF35D5423841E36007B0396 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAF35D5F23841E36007B0396 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B49A7F663FB69A7061E4ECA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MTHttpManagerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA8A7EDCD1A24FE6621FFBDF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MTHttpManagerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1BC67813D7F6D09E6AED430 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MTHttpManager/Pods-MTHttpManager-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MTHttpManager/Pods-MTHttpManager-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MTHttpManager/Pods-MTHttpManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1218B7337BF39A5D796A965 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MTHttpManager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAF35D3723841E34007B0396 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAF35D4623841E34007B0396 /* ViewController.m in Sources */,
+				EAF35D7523841E84007B0396 /* MTHttpConfig.m in Sources */,
+				EAF35D8A23841FCD007B0396 /* MTHttpDownload.m in Sources */,
+				EAF35D4023841E34007B0396 /* AppDelegate.m in Sources */,
+				EAF35D8223841F91007B0396 /* MTHttpBaseRequest.m in Sources */,
+				EAF35D5123841E35007B0396 /* main.m in Sources */,
+				EAF35D7923841ED8007B0396 /* MTHttpManager.m in Sources */,
+				EAF35D8E23842378007B0396 /* MTHttpLogger.m in Sources */,
+				EAF35D8623841FB0007B0396 /* MTHttpBaseResponse.m in Sources */,
+				EAF35D4323841E34007B0396 /* SceneDelegate.m in Sources */,
+				EAF35D7E23841F0A007B0396 /* MTHttpUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAF35D5223841E36007B0396 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAF35D5B23841E36007B0396 /* MTHttpManagerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAF35D5D23841E36007B0396 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAF35D6623841E36007B0396 /* MTHttpManagerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAF35D5823841E36007B0396 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAF35D3A23841E34007B0396 /* MTHttpManager */;
+			targetProxy = EAF35D5723841E36007B0396 /* PBXContainerItemProxy */;
+		};
+		EAF35D6323841E36007B0396 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAF35D3A23841E34007B0396 /* MTHttpManager */;
+			targetProxy = EAF35D6223841E36007B0396 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EAF35D4723841E34007B0396 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAF35D4823841E34007B0396 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EAF35D4C23841E35007B0396 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAF35D4D23841E35007B0396 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EAF35D6823841E36007B0396 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EAF35D6923841E36007B0396 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAF35D6B23841E36007B0396 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9706351BBD4387AB2E1103C4 /* Pods-MTHttpManager.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K4224GKYG8;
+				INFOPLIST_FILE = MTHttpManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.hupo.com.MTHttpManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EAF35D6C23841E36007B0396 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F0879C31857F244E5F97CAE /* Pods-MTHttpManager.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K4224GKYG8;
+				INFOPLIST_FILE = MTHttpManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.hupo.com.MTHttpManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EAF35D6E23841E36007B0396 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 572BAC64D4D2CEDECD407C97 /* Pods-MTHttpManagerTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K4224GKYG8;
+				INFOPLIST_FILE = MTHttpManagerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.hupo.com.MTHttpManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MTHttpManager.app/MTHttpManager";
+			};
+			name = Debug;
+		};
+		EAF35D6F23841E36007B0396 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9BFC5AD670E7742C386E713 /* Pods-MTHttpManagerTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K4224GKYG8;
+				INFOPLIST_FILE = MTHttpManagerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.hupo.com.MTHttpManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MTHttpManager.app/MTHttpManager";
+			};
+			name = Release;
+		};
+		EAF35D7123841E36007B0396 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57BEDFFB7AC7D15AAA90FECB /* Pods-MTHttpManagerUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K4224GKYG8;
+				INFOPLIST_FILE = MTHttpManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.hupo.com.MTHttpManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MTHttpManager;
+			};
+			name = Debug;
+		};
+		EAF35D7223841E36007B0396 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26D1A8E91194949791DDFD9C /* Pods-MTHttpManagerUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K4224GKYG8;
+				INFOPLIST_FILE = MTHttpManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.hupo.com.MTHttpManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MTHttpManager;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAF35D3623841E34007B0396 /* Build configuration list for PBXProject "MTHttpManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAF35D6823841E36007B0396 /* Debug */,
+				EAF35D6923841E36007B0396 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAF35D6A23841E36007B0396 /* Build configuration list for PBXNativeTarget "MTHttpManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAF35D6B23841E36007B0396 /* Debug */,
+				EAF35D6C23841E36007B0396 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAF35D6D23841E36007B0396 /* Build configuration list for PBXNativeTarget "MTHttpManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAF35D6E23841E36007B0396 /* Debug */,
+				EAF35D6F23841E36007B0396 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAF35D7023841E36007B0396 /* Build configuration list for PBXNativeTarget "MTHttpManagerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAF35D7123841E36007B0396 /* Debug */,
+				EAF35D7223841E36007B0396 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EAF35D3323841E34007B0396 /* Project object */;
+}
